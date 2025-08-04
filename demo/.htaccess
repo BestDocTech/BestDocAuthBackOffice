@@ -1,0 +1,15 @@
+# Enable rewrite engine
+RewriteEngine On
+
+# Route all HTML files through the handler
+RewriteRule ^(.+\.html)$ index.php?file=$1 [L,QSA]
+
+# Protect sensitive files
+<FilesMatch "^(config\.php|firebase-config\.php|\.htaccess)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# PHP settings
+php_value session.cookie_httponly 1
+php_value session.use_only_cookies 1 

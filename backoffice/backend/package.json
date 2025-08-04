@@ -1,0 +1,31 @@
+{
+  "name": "bestdoc-backoffice-backend",
+  "version": "1.0.0",
+  "description": "BestDoc Back Office Backend with Netlify Functions",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx netlify dev",
+    "build": "echo 'No build step required'",
+    "test": "echo 'No tests specified'"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "firebase-admin": "^11.11.0",
+    "serverless-http": "^3.2.0"
+  },
+  "engines": {
+    "node": "20.17.0"
+  },
+  "devDependencies": {
+    "@netlify/functions": "^2.0.0",
+    "netlify-cli": "^23.0.0"
+  },
+  "keywords": [
+    "firebase",
+    "admin",
+    "backoffice"
+  ],
+  "author": "BestDoc",
+  "license": "MIT"
+}
