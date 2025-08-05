@@ -6,23 +6,6 @@ Express.js-based Netlify Functions for the BestDoc back office application.
 
 The API requires the following environment variables to be set:
 
-### Firebase Configuration
-
-```env
-FIREBASE_API_KEY=your_api_key_here
-FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
-FIREBASE_PROJECT_ID=your_project_id
-FIREBASE_STORAGE_BUCKET=your_project_id.firebasestorage.app
-FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
-FIREBASE_APP_ID=your_app_id
-```
-
-### Firebase Admin SDK
-
-```env
-FIREBASE_ADMIN_CREDENTIALS={"type":"service_account","project_id":"..."}
-```
-
 ## Setup
 
 1. Copy `env.example` to `.env`:
